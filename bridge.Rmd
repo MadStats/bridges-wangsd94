@@ -8,5 +8,6 @@ output: html_document
 ```{r}
 WI15<-read.table("WI15.txt",header = TRUE,sep=",")
 itemsFromWI15<-WI15[,c(2,27,9,67,68,69)]
+write.csv(itemsFromWI15,file="itemsFromWI15.csv")
 ```
 
